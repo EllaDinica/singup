@@ -26,6 +26,14 @@
 
 @media (max-width: 768px) {
     
+    body{
+    width: 103%;
+}
+
+html{
+    width: 103%;
+}
+    
     body {
         padding-top: 22px;
     }
@@ -216,9 +224,16 @@
 
 
 @media (max-width: 320px) {
+    body{
+    width: 105%;
+}
+
+html{
+    width: 105%;
+}
 
     #setmore{
-        font-size: 100%;
+        font-size: 100% !important;
         top: 0;
     }
 
@@ -306,12 +321,16 @@
 }
 
 
-
-
 @media (max-width: 600px) {
 
     #setmore{
-        font-size: 100%;
+        font-size: 120%;
         top: 0;
+        color: antiquewhite;
     }
+
+    .dopis{
+        width: 400px;
+    }
+
 }

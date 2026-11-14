@@ -1,0 +1,307 @@
+.non{
+  font-size: 50px;
+  background: none;
+  border: none;
+  color: #009999;
+  text-decoration: none;
+  display: none;
+}
+
+.burger{
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: #009999;
+    text-decoration: none;
+    display: none;
+}
+
+.zag-phone{
+    display: none;
+}
+
+.lap-none{
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        padding-top: 22px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 1px;
+        margin: 1%;
+        z-index: 3;
+        text-shadow: 10px 5px 10px #000000;
+    }
+
+    .sn{
+        margin-top: 10%;
+    }
+    
+    .lap-none{
+        display: block;
+    }
+    
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card{
+        aspect-ratio: 16 / 10;
+    }
+
+    /*пробне*/
+
+    #inform{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .masterPhoto{
+        width: 80%;
+    }
+
+    .text h1{
+        font-size: 40px;
+    }
+
+    .text p{
+    font-size: 18px;
+    }
+
+    .text h1{
+        display: none;
+    }
+
+    .text p{
+        font-size: 180%;
+    }
+
+    .zag-phone{display: block;
+        text-align: center;
+        font-size: 300%;
+        color: white;
+        text-shadow: 0 0 10px #000000;
+        white-space: nowrap;
+    }
+
+    #inform img{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #zapis h1{
+        display: none;
+    }
+
+
+    #right{
+        display: none;
+    }
+
+    #zapis{
+        display: flex;
+        justify-content: center;
+    }
+
+    #left{
+        width: 90%;
+        max-width: 500px;
+        padding-left: 0; /* ОСЬ ГОЛОВНЕ */
+    }
+
+    .left{
+        display: none;
+    }
+
+    .block{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .block .center{
+        width: 80%;
+        padding: 3%;
+        border-radius: 30px 30px 30px 30px;
+    }
+    
+    .net{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .net img{
+        width: 70%;
+        border-radius: 10px;
+    }
+    
+    #links {
+    position: absolute;
+    top: 5%;
+    left: 20px;
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.nw {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+    #setmore{
+        font-size: 250%;
+        color: rgb(8, 94, 98);
+        top: -30px;
+        text-shadow: 2px 2px 6px #000000;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+  
+
+  #left{
+    flex: 1;
+    padding-left: 5%;
+  }
+
+  #right{
+    flex: 1;
+  }
+    
+}
+
+
+@media (max-width: 480px) {
+
+    #setmore{
+        font-size: 150%;
+        top: 0;
+    }
+
+    .burger{
+        margin-right: 30px;
+    }
+
+    .dopis a{
+        font-size: 120%;
+    }
+
+    .dopis{
+        width: 300px !important;
+    }
+
+    .zag-phone{
+        font-size: 200%;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    #setmore{
+        font-size: 100%;
+        top: 0;
+    }
+
+    .burger{
+        margin-right: 30px;
+    }
+
+    .dopis a{
+        font-size: 100%;
+    }
+
+    .dopis{
+        width: 300px !important;
+        height: 60px;
+        background: none;
+    }
+
+    .zag-phone{
+        font-size: 200%;
+    }
+
+    .nw img{
+        width: 80px;
+        left: -30px;
+    }
+
+    #links{
+        width: 300px;
+    }
+}
+    
+/* ПЛАНШЕТ ГОРИЗОНТАЛЬНО + ТЕЛЕФОН ГОРИЗОНТАЛЬНО */
+
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    .non{
+        display: block;
+    }
+
+    #cards {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: auto;
+        padding: 0 10px;
+    }
+
+    .card {
+        flex: 0 0 320px;
+        margin-top: 30px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        position: fixed;
+        right: 50px;
+        top: 1px;
+        margin: 1%;
+        z-index: 3;
+        text-shadow: 10px 5px 10px #000000;
+    }
+
+    #right{
+        display: none;
+    } 
+
+    #setmore{
+        top: -50px;
+    }
+
+    #links{
+        position: absolute;
+        left: 50px;
+    }
+
+    .nw{
+        width: 500px;
+    }
+}
+

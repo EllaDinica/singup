@@ -1,0 +1,244 @@
+html {
+    min-height: 100%;
+    background-color: #000;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #2e2e2e 0%,
+        #000000 100%
+    );
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 40px;
+    color: #f2f2f2;
+}
+
+/* ================== MENU ================== */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #181818;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 200%;
+}
+
+.shadow:hover{
+  text-shadow: 0px 0px 20px #006666;
+}
+
+
+
+
+/* form*/
+label {
+  display: none;
+}
+
+#links {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;               
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.apps {
+    width: 100px;  
+    border-radius: 15%;
+  transition: transform 0.5s;
+}
+
+.apps:hover{
+  transform: scale(1.3);
+  box-shadow: 0 0 20px 1px #006666;
+}
+
+#zapis {
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* відступи від країв екрана */
+}
+
+#left{
+  display: flex;
+  flex-direction: column; /* елементи один під одним */
+  align-items: center; 
+  padding-top: 1%;
+  padding-left: 15%;
+  z-index: 50;
+}
+
+
+#right{
+  text-align: center; 
+  background-color: #000000;
+  border-radius: 15%;
+  padding: 2%;
+}
+
+#appeal h1 {
+  padding: 10%;
+  margin-bottom: 10vh;            /* p близько */
+}
+
+/* текст */
+#appeal p {
+  font-size: 150%;
+  margin-bottom: 20vh;           /* кнопка нижче середини */
+}
+
+/* кнопка */
+.btnZapis {
+  padding: 22px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Times New Roman", "Georgia", "Didot";
+
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 200%;
+  cursor: pointer;
+  color: #009999;
+
+  transition: 0.3s;
+}
+
+.btnZapis:hover {
+  opacity: 0.6;
+}
+
+#zapis h1{
+  font-size: 300%;
+}
+
+form{
+  text-align: center;
+  font-family: "Times New Roman", "Georgia", "Didot";
+}
+
+input, select{
+  font-size: 150%;
+  font-family: "Times New Roman", "Georgia", "Didot";
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+p{
+  transition: 0.5s;
+}
+
+p:hover{
+  transform: scale(1.06);
+}
+
+h1{
+  transition: 0.5s;
+}
+
+h1:hover{
+  transform: scale(1.09);
+}
+
+
+#setmore {
+    position: fixed;
+    top: 20%;
+    right: 100px;
+    margin: 0;
+    font-size: 270%;
+    color: #0a5656;
+    text-decoration: none;
+    z-index: 1001;
+}
+
+#setmore:hover {
+    color: #0e8a88;
+}
+
+
+/* ================== SOCIAL LINKS ================== */
+
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+/* Один рядок соціальної мережі */
+.nw {
+    display: flex;
+    align-items: stretch;
+    width: 500px;
+    height: 120px;
+    cursor: pointer;
+}
+
+/* Іконки */
+.nw img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Блоки з текстом */
+.dopis {
+    height: 120px;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #064444;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    transition: width 0.5s ease, opacity 2s ease;
+}
+
+/* Текст */
+.dopis a {
+    display: block;
+    padding-left: 15px;
+    color: #dedede;
+    text-decoration: none;
+    font-size: 155%;
+}
+
+/* Наведення */
+.nw:hover .dopis {
+    width: 385px;
+    opacity: 1;
+}

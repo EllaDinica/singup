@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+}
+
+.pel1{
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    /*left: 10px;*/
+    background: #003333/*#006666*/;
+    border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;
+    top: -5%;
+    box-shadow: 0 0 30px #001a1a/*#008080*/;
+   /* z-index: -10;*/
+
+    animation: fall 5s infinite;
+}
+
+body{
+    background-color: #000;
+    /*text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    color: #eff8e2;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1%;
+}
+
+#text{
+    font-size: 250%;
+    color: #3ac6c6;
+    text-shadow: 0 0 30px #197a7a;
+}
+
+@keyframes fall{
+    from{
+        top: -5%;
+    }
+    to{
+        top: 100%;
+        background: none;
+        box-shadow: none;
+    }
+}
+
+
+
+.pel1:nth-child(1)  { left: 10%; animation-duration: 10s; animation-delay: -2s; transform: rotate(-30deg);}
+.pel1:nth-child(2)  { left: 20%; animation-duration: 12s; animation-delay: -5s; transform: rotate(-70deg);}
+.pel1:nth-child(3)  { left: 30%; animation-duration: 9s;  animation-delay: -7s; transform: rotate(-80deg);}
+.pel1:nth-child(4)  { left: 40%; animation-duration: 14s; animation-delay: -3s; transform: rotate(30deg);}
+.pel1:nth-child(5)  { left: 50%; animation-duration: 11s; animation-delay: -6s; transform: rotate(60deg);}
+.pel1:nth-child(6)  { left: 60%; animation-duration: 13s; animation-delay: -4s; transform: rotate(-10deg);}
+.pel1:nth-child(7)  { left: 70%; animation-duration: 10s; animation-delay: -8s; transform: rotate(-50deg);}
+.pel1:nth-child(8)  { left: 80%; animation-duration: 15s; animation-delay: -1s; transform: rotate(70deg);}
+.pel1:nth-child(9)  { left: 90%; animation-duration: 9s;  animation-delay: -9s; transform: rotate(50deg);}
+.pel1:nth-child(10)  { left: 53%; animation-duration: 12s;  animation-delay: -7s; transform: rotate(-30deg);}
+.pel1:nth-child(11)  { left: 76%; animation-duration: 14s;  animation-delay: -10s; }
+.pel1:nth-child(12)  { left: 25%; animation-duration: 10s;  animation-delay: -7s; transform: rotate(-80deg);}
+.pel1:nth-child(13)  { left: 5%; animation-duration: 13s;  animation-delay: -9s; transform: rotate(600deg);}
+.pel1:nth-child(14)  { left: 87%; animation-duration: 5s;  animation-delay: -2s; transform: rotate(-20deg);}

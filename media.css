@@ -305,3 +305,13 @@
     }
 }
 
+
+
+
+@media (max-width: 600px) {
+
+    #setmore{
+        font-size: 100%;
+        top: 0;
+    }
+}
